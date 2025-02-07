@@ -9,7 +9,7 @@ namespace NSPowerTwo
             Random random = new Random();
             int startNumber = 2;
             int extent = 2;
-            int extentCount = 0;
+            int extentCount = 1;
             int number = startNumber;
             int minRandomValue = 0;
             int maxRandomValue = 100;
