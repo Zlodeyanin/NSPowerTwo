@@ -13,13 +13,14 @@ namespace NSPowerTwo
             int number = startNumber;
             int minRandomValue = 0;
             int maxRandomValue = 100;
-            int randomNumber = random.Next(minRandomValue, maxRandomValue);
-            
-            while (number < randomNumber)
+            int randomNumber = random.Next(minRandomValue, maxRandomValue + 1);
+
+            while (number <= randomNumber)
             {
                 number *= extent;
                 extentCount++;
             }
+
             Console.WriteLine($"Случайное число: {randomNumber}.\nСтепень двойки: {extentCount}.\nПревосходящее число: {number}.");
         }
     }
